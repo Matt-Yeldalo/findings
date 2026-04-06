@@ -29,3 +29,4 @@ gem "rubocop-rails", "~> 2.34", :groups => [:development, :test]
 gem "rubocop-performance", "~> 1.26", :groups => [:development, :test]
 gem "hotwire-spark", "~> 0.1.13", :group => :development
 gem "devise", "~> 5.0"
+gem "inline_svg"

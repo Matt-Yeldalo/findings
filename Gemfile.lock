@@ -145,6 +145,9 @@ GEM
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
+    inline_svg (1.10.0)
+      activesupport (>= 3.0)
+      nokogiri (>= 1.6)
     io-console (0.8.2)
     irb (1.17.0)
       pp (>= 0.6.0)
@@ -419,6 +422,7 @@ DEPENDENCIES
   font-awesome-sass (~> 6.7)
   hotwire-spark (~> 0.1.13)
   importmap-rails
+  inline_svg
   kamal
   propshaft
   puma (>= 5.0)

@@ -1,0 +1,10 @@
+<div class="findings-new-container">
+  <%= form_with(model: @finding) do %>
+    <% Finding::FORM_FIELDS.each do |field| %>
+      <div class="form-group">
+        <%= label_tag field, field.humanize %>
+        <%= text_field_tag "finding[#{field}]", @finding.send(field), class: "form-control" %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

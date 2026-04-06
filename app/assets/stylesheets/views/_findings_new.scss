@@ -1,0 +1,32 @@
+.findings-new-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* max-width: 600px; */
+    gap: 1rem;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      label {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: rgb(156, 163, 175);
+      }
+      input,
+      textarea {
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+    }
+  }
+}

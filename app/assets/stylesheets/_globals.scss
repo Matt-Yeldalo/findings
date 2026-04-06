@@ -1,0 +1,40 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(22, 22, 26, 1);
+}
+
+input,
+textarea {
+  background-color: rgba(22, 22, 26, 1);
+  color: #f8f9fa;
+  border: 1px solid #6c757d;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+aside {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  width: 200px;
+  display: none;
+
+  .header-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    h1 {
+      font-size: 1.5rem;
+      margin-left: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+  }
+}
