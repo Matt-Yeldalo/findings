@@ -1,7 +1,5 @@
 class CreateFindings < ActiveRecord::Migration[8.0]
   def change
-    # Findings - table to store notable observations from books, articles, or even from documentation
-    # The theme is ruby/rails software dev related, but it can be extended to other topics as well
     create_table :findings do |t|
       t.references :user, null: false, foreign_key: true
       t.string :title, null: false
@@ -11,8 +9,9 @@ class CreateFindings < ActiveRecord::Migration[8.0]
       t.string :source_name
       t.text :source_url
       t.string :category
-      t.string :tags
+      t.string :tags, array: true, default: []
       t.timestamps
     end
+    add_index :findings, :tags, using: :gin
   end
 end

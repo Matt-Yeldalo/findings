@@ -1,1 +1,10 @@
-<div data-controller="finding-component--finding-component">Add Finding template here</div>
+<div class="finding-component-container">
+  <h2><%= link_to finding.title, finding_path(finding) %></h2>
+  <div class="details">
+    <p><%= truncate(finding.description, length: 100) %></p>
+  </div>
+  <div class="finding-actions">
+    <%= link_to "Edit", edit_finding_path(finding), class: "edit-link" %>
+    <%= link_to "Delete", finding_path(finding), method: :delete, data: { confirm: "Are you sure?" }, class: "delete-link" %>
+  </div>
+</div>
