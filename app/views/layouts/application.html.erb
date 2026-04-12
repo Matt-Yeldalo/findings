@@ -26,9 +26,15 @@
     <aside>
       <div class="header-info">
         <h1>Findings</h1>
-        <p class="subtitle"></p>
       </div>
 
+      <div class="filters">
+        <% @tags.each do |tag| %>
+          <span class="filter-tag tag">
+            <%= tag %>
+          </span>
+        <% end %>
+      </div>
     </aside>
     <%= yield %>
   </body>

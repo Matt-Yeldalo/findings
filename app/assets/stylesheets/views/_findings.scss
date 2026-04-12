@@ -8,26 +8,17 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+    }
   }
 
   .findings-list {
     display: flex;
     flex-direction: column;
     gap: 1em;
-
-    .finding-item {
-      border: 1px solid #ccc;
-      padding: 1em;
-      border-radius: 5px;
-
-      h2 {
-        margin-top: 0;
-      }
-
-      .details {
-        margin-top: 0.5em;
-        color: #666;
-      }
-    }
   }
 }

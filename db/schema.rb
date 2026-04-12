@@ -11,8 +11,11 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[8.0].define(version: 2026_03_29_033513) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "pg_catalog.plpgsql"
+
   create_table "findings", force: :cascade do |t|
-    t.integer "user_id", null: false
+    t.bigint "user_id", null: false
     t.string "title", null: false
     t.text "description"
     t.text "example_code"
@@ -20,9 +23,10 @@ ActiveRecord::Schema[8.0].define(version: 2026_03_29_033513) do
     t.string "source_name"
     t.text "source_url"
     t.string "category"
-    t.string "tags"
+    t.string "tags", default: [], array: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["tags"], name: "index_findings_on_tags", using: :gin
     t.index ["user_id"], name: "index_findings_on_user_id"
   end
 

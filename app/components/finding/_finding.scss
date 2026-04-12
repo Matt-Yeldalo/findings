@@ -1,0 +1,92 @@
+.finding-component-container {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1em;
+  border-radius: 5px;
+  background-color: rgb(26 26 31);
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .category {
+      color: #fff;
+      padding: 0.2em 0.5em;
+      border-radius: 3px;
+      font-size: 0.8em;
+    }
+
+    .meta {
+      .date {
+        color: #666;
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  .details {
+    margin-top: 0.5em;
+    color: #666;
+  }
+
+  .meta {
+    code {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--color-secondary);
+      padding: 0.2em 0.5em;
+      border-radius: 3px;
+      font-size: 0.8em;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      text-wrap: break-word;
+    }
+
+    .tags {
+      margin-top: 0.5em;
+      display: flex;
+      gap: 0.5em;
+
+      .tag {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: var(--color-secondary);
+        padding: 0.2em 0.5em;
+        border-radius: 3px;
+        font-size: 0.8em;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+
+  .finding-actions {
+    margin-top: 1em;
+    display: flex;
+    gap: 0.5em;
+
+    a {
+      background-color: var(--color-primary);
+      color: #fff;
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 3px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.8em;
+
+      &:hover {
+        background-color: var(--color-primary-hover);
+      }
+
+      &.delete-link {
+        background-color: var(--color-danger);
+
+        &:hover {
+          background-color: var(--color-danger-hover);
+        }
+      }
+    }
+  }
+}

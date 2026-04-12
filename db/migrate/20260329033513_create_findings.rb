@@ -10,8 +10,8 @@ class CreateFindings < ActiveRecord::Migration[8.0]
       t.text :source_url
       t.string :category
       t.string :tags, array: true, default: []
+      t.index :tags, using: "gin"
       t.timestamps
     end
-    add_index :findings, :tags, using: :gin
   end
 end

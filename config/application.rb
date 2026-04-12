@@ -21,10 +21,9 @@ Bundler.require(*Rails.groups)
 module SolutionLog
   class Application < Rails::Application
 
-# ViewComponent
-config.view_component.generate.sidecar = true
-config.view_component.previews.paths << Rails.root.join("spec/components/previews")
-config.view_component.generate.stimulus_controller = true
+    # ViewComponent
+    config.view_component.generate.sidecar = true
+    config.view_component.previews.paths << Rails.root.join("spec/components/previews")
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 8.0
 

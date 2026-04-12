@@ -1,0 +1,34 @@
+<div class="finding-component-container">
+  <div class="header">
+    <h2><%= link_to finding.title, finding_path(finding) %></h2>
+
+    <div class="meta">
+      <span class="date"><%= finding.created_at.strftime("%B %d, %Y") %></span>
+    </div>
+  </div>
+
+  <h3 class='category'>
+    <%= finding.category %>
+  </h3>
+
+  <div class="details">
+    <p><%= truncate(finding.description, length: 100) %></p>
+  </div>
+  <div class="meta">
+    <% if code? %>
+      <code>
+        <%= finding.example_code %>
+      </code>
+    <% end %>
+
+    <div class="tags">
+      <% finding.tags.each do |tag| %>
+        <span class="tag"><%= tag %></span>
+      <% end %>
+    </div>
+  </div>
+  <div class="finding-actions">
+    <%= link_to "Edit", edit_finding_path(finding), class: "edit-link" %>
+    <%= link_to "Delete", finding_path(finding), method: :delete, data: { confirm: "Are you sure?" }, class: "delete-link" %>
+  </div>
+</div>

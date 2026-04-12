@@ -1,17 +1,16 @@
 body {
   font-family: "Open Sans", sans-serif;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
   background-color: rgba(22, 22, 26, 1);
-  color: #f8f9fa;
+  color: rgb(229, 231, 235);
+  display: flex;
 }
 
 input,
 textarea {
   background-color: rgba(22, 22, 26, 1);
   color: #f8f9fa;
-  border: 1px solid #6c757d;
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   padding: 0.5rem;
   font-size: 1rem;
@@ -27,15 +26,20 @@ a {
 }
 
 aside {
-  background-color: #f8f9fa;
   padding: 1rem;
   width: 200px;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-right: 1px solid var(--color-border);
+  margin-right: 1rem;
+  background-color: var(--bg-card);
 
   .header-info {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
 
     h1 {
       font-size: 1.5rem;
@@ -45,6 +49,21 @@ aside {
     .subtitle {
       font-size: 0.9rem;
       color: #6c757d;
+    }
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .filter-tag {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--color-secondary);
+      padding: 0.2em 0.5em;
+      border-radius: 3px;
+      font-size: 0.8em;
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
   }
 }
