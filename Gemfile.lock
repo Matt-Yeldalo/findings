@@ -321,7 +321,7 @@ GEM
       rack (>= 1.1)
       rubocop (>= 1.75.0, < 2.0)
       rubocop-ast (>= 1.44.0, < 2.0)
-    ruby-lsp (0.26.8)
+    ruby-lsp (0.26.9)
       language_server-protocol (~> 3.17.0)
       prism (>= 1.2, < 2.0)
       rbs (>= 3, < 5)
@@ -414,7 +414,7 @@ DEPENDENCIES
   rubocop (~> 1.86)
   rubocop-performance (~> 1.26)
   rubocop-rails (~> 2.34)
-  ruby-lsp (~> 0.26.8)
+  ruby-lsp (~> 0.26.9)
   stimulus-rails
   thruster
   turbo-rails

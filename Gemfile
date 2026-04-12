@@ -20,7 +20,7 @@ group :development do
 end
 gem "view_component", "~> 4.5"
 gem "rubocop", "~> 1.86", :groups => [:development, :test]
-gem "ruby-lsp", "~> 0.26.8", :group => :development
+gem "ruby-lsp", "~> 0.26.9", :group => :development
 gem "rubocop-rails", "~> 2.34", :groups => [:development, :test]
 gem "rubocop-performance", "~> 1.26", :groups => [:development, :test]
 gem "hotwire-spark", "~> 0.1.13", :group => :development
