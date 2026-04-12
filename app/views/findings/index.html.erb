@@ -1,5 +1,13 @@
 <div class="findings-index-container">
-  <h1>Your Findings</h1>
+  <h1>
+    Your Findings
+  </h1>
+  <div data-controller="search" class="search-container">
+    <%= form_with url: root_path do %>
+      <%= search_field :q, nil, type: :search %>
+    <% end %>
+  </div>
+
   <div class="actions-container">
     <%= link_to new_finding_path do %>
       <%= inline_svg_tag "plus.svg" %>

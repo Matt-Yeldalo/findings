@@ -1,7 +1,13 @@
 .findings-index-container {
+  padding: 1rem;
   h1 {
     font-size: 1.5em;
     margin-bottom: 0.5em;
+  }
+  .search-container {
+    input {
+      width: 100%;
+    }
   }
 
   .actions-container {
