@@ -18,7 +18,7 @@ end
 group :development do
   gem "web-console"
 end
-gem "view_component", "~> 4.5"
+gem "view_component", "~> 4.8"
 gem "rubocop", "~> 1.86", :groups => [:development, :test]
 gem "ruby-lsp", "~> 0.26.8", :group => :development
 gem "rubocop-rails", "~> 2.34", :groups => [:development, :test]
